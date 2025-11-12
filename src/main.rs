@@ -1,20 +1,14 @@
-// The dioxus prelude contains a ton of common items used in dioxus apps. It's a good idea to import wherever you
-// need dioxus
 use dioxus::prelude::*;
 
-use components::Hero;
-use views::{Blog, Home, Navbar};
+use views::{Home};
 mod components;
 mod views;
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]
 enum Route {
-    #[layout(Navbar)]
         #[route("/")]
         Home {},
-        #[route("/blog/:id")]
-        Blog { id: i32 },
 }
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
