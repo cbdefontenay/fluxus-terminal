@@ -3,6 +3,7 @@ use dioxus::prelude::*;
 use views::{Home};
 mod components;
 mod views;
+mod app_icons;
 
 #[derive(Debug, Clone, Routable, PartialEq)]
 #[rustfmt::skip]

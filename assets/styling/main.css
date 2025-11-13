@@ -1,6 +1,59 @@
-body {
-    background-color: #0f1116;
-    color: #ffffff;
+:root {
+    --primary: rgb(182 234 174);
+    --surface-tint: rgb(161 211 154);
+    --on-primary: rgb(0 45 7);
+    --primary-container: rgb(108 156 104);
+    --on-primary-container: rgb(0 0 0);
+    --secondary: rgb(182 234 174);
+    --on-secondary: rgb(0 45 7);
+    --secondary-container: rgb(108 156 104);
+    --on-secondary-container: rgb(0 0 0);
+    --tertiary: rgb(182 229 234);
+    --on-tertiary: rgb(0 43 47);
+    --tertiary-container: rgb(107 152 158);
+    --on-tertiary-container: rgb(0 0 0);
+    --error: rgb(255 210 204);
+    --on-error: rgb(84 0 3);
+    --error-container: rgb(255 84 73);
+    --on-error-container: rgb(0 0 0);
+    --background: rgb(16 20 15);
+    --on-background: rgb(224 228 219);
+    --surface: rgb(16 20 15);
+    --on-surface: rgb(255 255 255);
+    --surface-variant: rgb(66 73 64);
+    --on-surface-variant: rgb(216 222 210);
+    --outline: rgb(173 180 169);
+    --outline-variant: rgb(140 146 136);
+    --shadow: rgb(0 0 0);
+    --scrim: rgb(0 0 0);
+    --inverse-surface: rgb(224 228 219);
+    --inverse-on-surface: rgb(39 43 37);
+    --inverse-primary: rgb(36 81 37);
+    --primary-fixed: rgb(188 240 180);
+    --on-primary-fixed: rgb(0 22 2);
+    --primary-fixed-dim: rgb(161 211 154);
+    --on-primary-fixed-variant: rgb(17 63 21);
+    --secondary-fixed: rgb(188 240 180);
+    --on-secondary-fixed: rgb(0 22 2);
+    --secondary-fixed-dim: rgb(161 211 154);
+    --on-secondary-fixed-variant: rgb(17 63 21);
+    --tertiary-fixed: rgb(188 235 240);
+    --on-tertiary-fixed: rgb(0 20 22);
+    --tertiary-fixed-dim: rgb(160 207 212);
+    --on-tertiary-fixed-variant: rgb(7 60 65);
+    --surface-dim: rgb(16 20 15);
+    --surface-bright: rgb(65 70 63);
+    --surface-container-lowest: rgb(5 8 5);
+    --surface-container-low: rgb(27 31 25);
+    --surface-container: rgb(37 41 35);
+    --surface-container-high: rgb(47 52 46);
+    --surface-container-highest: rgb(59 63 57);
+
+}
+
+html, body {
+    background-color: var(--background);
+    color: var(--on-background);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
