@@ -1,4 +1,4 @@
-use crate::app_icons::FolderIcon;
+use crate::app_icons::{FolderIcon, TerminalIcon};
 use crate::components::home::DesktopIcons;
 use crate::Route;
 use dioxus::prelude::*;
@@ -12,6 +12,13 @@ pub fn MainHomeLayout() -> Element {
                 to: Route::Home {},
                 DesktopIcons {
                     FolderIcon { class: "w-15 h-15 p-1 rounded-full text-(--on-primary)" }
+                }
+            }
+            Link {
+                class: "bg-(--primary)",
+                to: Route::Home {},
+                DesktopIcons {
+                    TerminalIcon { class: "w-15 h-15 p-1 rounded-full text-(--on-primary)" }
                 }
             }
         }
