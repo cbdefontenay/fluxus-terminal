@@ -4,7 +4,10 @@ use dioxus::prelude::*;
 pub fn Settings() -> Element {
     rsx! {
         div {
-            "Hi"
+            h1{
+                class: "",
+                "Settings"
+            }
         }
     }
 }
