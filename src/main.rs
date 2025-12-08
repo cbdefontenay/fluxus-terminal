@@ -1,6 +1,6 @@
 use dioxus::prelude::*;
 
-use views::{Home};
+use views::{Home, Terminal};
 mod components;
 mod views;
 mod app_icons;
@@ -10,6 +10,8 @@ mod app_icons;
 enum Route {
         #[route("/")]
         Home {},
+        #[route("/terminal")]
+        Terminal {},
 }
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");
